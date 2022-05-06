@@ -1,0 +1,36 @@
+@use "./var" as var;
+
+@mixin bigText {
+  font-weight: 100;
+  font-size: 18px;
+  color: var.$fontC;
+}
+
+@mixin smallText {
+  font-weight: 100;
+  font-size: 16px;
+}
+
+@mixin title {
+  font-weight: 500;
+  font-size: 75px;
+}
+
+@mixin heading {
+  font-weight: 500;
+  font-size: 55px;
+}
+
+@mixin subheading {
+  font-weight: 400;
+  font-size: 19px;
+}
+
+@mixin btn {
+  font-weight: 600;
+  background: var.$gradient1;
+  border-radius: 10px;
+  padding: 10px 25px;
+}
+
+

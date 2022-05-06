@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+@font-face {
+  font-family: "Poppins";
+  src: url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap);
+}
+
+// Font
+
+$font: "Poppins";
+$fontC: #707070;
+
+// Colors
+
+$primary: #f34056;
+$secondary: #f26246;
+
+$gradient1: linear-gradient(
+  45deg,
+  rgba(242, 98, 70, 1) 0%,
+  rgba(243, 64, 86, 1) 100%
+);
+
+$gradient2: linear-gradient(
+  180deg,
+  rgba(243, 64, 86, 1) 0%,
+  rgba(242, 98, 70, 1) 100%
+);

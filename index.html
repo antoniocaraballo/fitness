@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Fitness</title>
+  </head>
+  <body>
+    <div class="landing-page">
+      <!-- Header -->
+      <header>
+        <!-- Navbar -->
+        <div class="navbar">
+          <!-- Left Side -->
+          <div class="nav-left">
+            <div class="logo"><img src="./icons/logo.png" alt="" /></div>
+            <nav class="nav">
+              <ul>
+                <li>
+                  <a href="#" onclick="closeNav()" class="closeNav"
+                    ><img src="./icons/x .png" alt=""
+                  /></a>
+                </li>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Category</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- Right Side -->
+          <div class="nav-right">
+            <a href="#">Log in</a>
+            <a href="#" class="btn">Sign up</a>
+            <div class="hamMenu" onclick="openNav()">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Landing Page Content -->
+      <div class="lp-content">
+        <div class="lp-left">
+          <h2 class="title">Spring into fitness</h2>
+          <p>
+            Get the latest expert fitness advice on healthy workouts, fitness
+            challenges, muscle recovery, workout trends, and more.
+          </p>
+          <a href="#" class="btn">Get started</a>
+        </div>
+        <div class="lp-right">
+          <img src="./imgs/banner.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- Goals -->
+    <section class="goals">
+      <div class="goals-image">
+        <div class="img-outline"></div>
+        <img src="./imgs/gym1.jpg" alt="" />
+      </div>
+      <div class="goals-info">
+        <h2 class="heading">Set your goals</h2>
+        <p class="text">
+          Starting to Set Personal Goals · First you create your "big picture"
+          of what you want to do with your life (or over, say, the next 10
+          years), and identify the ...
+        </p>
+        <a href="#" class="btn">Get started</a>
+      </div>
+    </section>
+    <!-- Workout -->
+    <section class="workout">
+      <div class="workout-info">
+        <h2 class="heading">Workout from home with ease</h2>
+        <p class="text">
+          The best at-home workouts don’t necessarily require a ton of
+          equipment—or any equipment—other than your own bodyweight. That’s good
+          news for many
+        </p>
+        <a href="#" class="btn-outline">Get started</a>
+      </div>
+      <div class="workout-image">
+        <div class="img-outline"></div>
+        <img src="./imgs/gym2.jpg" alt="" />
+      </div>
+    </section>
+    <!-- Program -->
+    <section class="program">
+      <h2 class="heading">Our Program</h2>
+      <p class="text">
+        A gymnasium, also known as a gym, is a covered location for athletics.
+      </p>
+      <div class="program-cards">
+        <!-- Card 1 -->
+        <div class="card">
+          <img src="./icons/stretch.png" alt="" />
+          <h3 class="subHeading">Cardio Strength</h3>
+          <p class="subText">A gymnasium, also known as a gym.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="./icons/lift.png" alt="" />
+          <h3 class="subHeading">Muscle Building</h3>
+          <p class="subText">A gymnasium, also known as a gym.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="card active-card">
+          <img src="./icons/yoga.png" alt="" />
+          <h3 class="subHeading">Basic Yoga</h3>
+          <p class="subText">A gymnasium, also known as a gym.</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="card">
+          <img src="./icons/run.png" alt="" />
+          <h3 class="subHeading">Running</h3>
+          <p class="subText">A gymnasium, also known as a gym.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Performance -->
+    <section class="performance">
+      <div class="performance-image">
+        <div class="img-outline"></div>
+        <img src="./imgs/gym3.jpg" alt="" />
+      </div>
+      <div class="performance-info">
+        <h2 class="heading">Measure your Performance</h2>
+        <p class="text">
+          Undoubtedly one of the best ways to measure fitness progress, logging
+          strength workouts helps you keep track of metrics like how much you
+          can ...
+        </p>
+        <a href="#" class="btn">Get started</a>
+      </div>
+    </section>
+    <!-- Fit Form -->
+    <section class="fit-form">
+      <div class="form">
+        <h3 class="subHeading">
+          Now <span>our offer</span> will last up to 2 months
+        </h3>
+        <p class="subText">
+          Discover Peloton: streaming fitness classes to you live and on-demand.
+          ... Offer ends soon. Last chance for 2 months free
+        </p>
+        <form action="#">
+          <input type="text" placeholder="First name" id="fname" />
+          <input type="text" placeholder="Last name" id="lname" />
+          <input type="email" placeholder="Email address" id="email" />
+          <input type="text" placeholder="Phone number" id="phone" />
+          <input type="text" placeholder="Zip code" id="zipcode" />
+          <input type="message" placeholder="Message" id="msg" />
+          <a href="" class="btn">Submit now</a>
+        </form>
+      </div>
+      <div class="fit-form-img">
+        <img src="./imgs/no-bg.png" alt="" />
+      </div>
+    </section>
+    <!-- About us -->
+    <section class="about">
+      <div class="about-image">
+        <div class="img-outline"></div>
+        <img src="./imgs/gym4.jpg" alt="" />
+      </div>
+      <div class="about-info">
+        <h2 class="heading">About Us</h2>
+        <p class="text">
+          At Gym and Fitness, we believe that building a positive culture is
+          incredibly important. The business is underpinned by six core values
+          which speak of our ...
+        </p>
+        <a href="#" class="btn">Get started</a>
+      </div>
+    </section>
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <h2 class="heading">Subscribe to our daily tips</h2>
+      <p class="text">
+        Sign up for a class. Check out the fitness course schedule at your local
+        gym or community center, or the dance or yoga class schedule at a ...
+      </p>
+      <form action="#">
+        <input type="email" placeholder="Type your email address" />
+        <a href="#" class="btn">Subscribe</a>
+      </form>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-info">
+        <h3 class="subHeading">Fitness & GYM Center</h3>
+        <p class="text">
+          Get the latest expert fitness advichealthy workouts, fitness
+          challenges, mrecovery, workout trends, and
+        </p>
+      </div>
+      <div class="footer-menu">
+        <ul>
+          <h3 class="subHeading">About us</h3>
+          <p class="text">
+            Get the latest expert fitness advice on healthy workouts, fitness
+            challenges, muscle recovery, workout trends, and more.
+          </p>
+        </ul>
+        <ul>
+          <h3 class="subHeading">Address</h3>
+          <p class="text">
+            Get the latest expert fitness advice on healthy workouts, fitness
+            challenges, muscle recovery, workout trends, and more.
+          </p>
+        </ul>
+        <ul>
+          <h3 class="subHeading">Contact</h3>
+          <p class="text">
+            Get the latest expert fitness advice on healthy workouts, fitness
+            challenges, muscle recovery, workout trends, and more.
+          </p>
+        </ul>
+        <ul>
+          <h3 class="subHeading">Social Media</h3>
+          <p class="text">
+            Get the latest expert fitness advice on healthy workouts, fitness
+            challenges, muscle recovery, workout trends, and more.
+          </p>
+          <li class="socials">
+            <a href="#"><img src="./icons/facebook.png" alt="" /></a>
+            <a href="#"><img src="./icons/twitter.png" alt="" /></a>
+            <a href="#"><img src="./icons/instagram.png" alt="" /></a>
+            <a href="#"><img src="./icons/linkedin.png" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div class="copy">
+      <p class="text">Copyright © 2022 All Rights Reserved.</p>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

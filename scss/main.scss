@@ -1,0 +1,700 @@
+@use "./var" as var;
+@use "./mixins" as mix;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var.$font;
+  color: #ffffff;
+  @include mix.smallText;
+    // outline: 1px solid red;
+}
+
+body {
+  background: #111111;
+  overflow-x: hidden;
+}
+
+.landing-page {
+  width: 100%;
+  height: 100vh;
+  background: url(../imgs/bg.jpg);
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+
+.navbar {
+  max-width: 1280px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+
+  .logo {
+    display: flex;
+    img {
+      width: 50px;
+    }
+  }
+
+  .nav {
+    display: flex;
+    ul {
+      list-style: none;
+      display: flex;
+    }
+
+    li {
+      margin: 0px 25px;
+    }
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        color: var.$primary;
+        border-bottom: 2px solid var.$primary;
+      }
+    }
+  }
+}
+
+.closeNav {
+  display: none;
+  width: 25px;
+  filter: invert(1);
+}
+
+.hamMenu {
+  display: none;
+}
+
+// Nav Active
+.active {
+  color: var.$primary;
+  border-bottom: 2px solid var.$primary;
+}
+
+.nav-right {
+  display: flex;
+
+  a {
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 10px;
+  }
+}
+
+// Buttons
+
+.btn {
+  font-weight: 500;
+  background: var.$gradient1;
+  border-radius: 10px;
+  padding: 12px 25px;
+}
+
+.lp-content {
+  height: 85vh;
+  width: 90%;
+  max-width: 1280px;
+  display: flex;
+  margin: auto;
+}
+
+.lp-left {
+  width: 50%;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  p {
+    @include mix.bigText;
+    line-height: 2;
+    margin: 20px 0px 60px 0px;
+  }
+
+  a {
+    text-decoration: none;
+    padding: 15px 25px;
+    width: max-content;
+  }
+}
+
+// Title
+.title {
+  @include mix.title;
+}
+
+.lp-right {
+  width: 50%;
+  max-width: 90%;
+
+  img {
+    height: 100%;
+    filter: grayscale(50);
+  }
+}
+
+// Goals
+
+.goals {
+  width: 90%;
+  max-width: 1280px;
+  display: flex;
+  margin: 60px auto;
+}
+
+.goals-image {
+  width: 50%;
+  max-width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .img-outline {
+    height: 90%;
+    width: 300px;
+    border-radius: 190px 190px 0px 0px;
+    border: 10px solid var.$primary;
+    margin-right: -40%;
+    margin-top: -10%;
+  }
+
+  img {
+    height: 90%;
+    width: 300px;
+    border-radius: 190px 190px 0px 0px;
+  }
+}
+
+// Goals Info
+
+.goals-info {
+  width: 90%;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+    max-width: max-content;
+  }
+}
+
+// Heading
+
+.heading {
+  @include mix.heading;
+}
+
+// Text
+
+.text {
+  @include mix.smallText;
+  margin: 40px 0px;
+  color: var.$fontC;
+}
+
+.workout {
+  width: 90%;
+  max-width: 1280px;
+  display: flex;
+  margin: 60px auto;
+}
+
+// Buttton Outline
+
+.btn-outline {
+  font-weight: 500;
+  border: 1px solid var.$primary;
+  border-radius: 10px;
+  padding: 12px 25px;
+  text-decoration: none;
+}
+
+.workout-image {
+  width: 90%;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .img-outline {
+    height: 90%;
+    width: 300px;
+    border-radius: 190px 190px 0px 0px;
+    border: 10px solid var.$primary;
+    margin-right: -40%;
+    margin-top: -10%;
+  }
+
+  img {
+    height: 90%;
+    width: 300px;
+    border-radius: 190px 190px 0px 0px;
+  }
+}
+
+// Our Program
+
+.program {
+  width: 90%;
+  max-width: 1280px;
+  margin: 40px auto;
+  text-align: center;
+
+  p {
+    margin: 20px 0px;
+  }
+}
+
+.program-cards {
+  margin: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  border-radius: 25px;
+  border: 1px solid var.$primary;
+  padding: 20px;
+  width: 250px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background: var.$gradient2;
+    border: none;
+  }
+
+  img {
+    width: 60px;
+    filter: invert(1);
+  }
+}
+
+.subHeading {
+  @include mix.subheading;
+  margin-top: 30px;
+
+  span {
+    @include mix.subheading;
+    color: var.$primary;
+  }
+}
+
+.subText {
+  font-size: 12px;
+  line-height: 2;
+}
+
+.active-card {
+  background: var.$gradient2;
+  border: none;
+}
+
+// Performance
+
+.performance {
+  width: 90%;
+  max-width: 1280px;
+  display: flex;
+  margin: 80px auto;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.performance-image {
+  width: 50%;
+  max-width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .img-outline {
+    height: 90%;
+    width: 300px;
+    border-radius: 190px 190px 0px 0px;
+    border: 10px solid var.$primary;
+    margin-right: -40%;
+    margin-top: -10%;
+  }
+
+  img {
+    height: 90%;
+    width: 300px;
+    border-radius: 190px 190px 0px 0px;
+  }
+}
+
+// Fit Form
+
+.fit-form {
+  width: 90%;
+  max-width: 1280px;
+  margin: 60px auto;
+  background: #222222;
+  border-radius: 25px;
+  display: flex;
+  //   padding: 40px;
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+
+  p {
+    margin: 20px 0px;
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+    input {
+      padding: 10px;
+      border-radius: 10px;
+      margin: 5px;
+      background: none;
+      border: 1px solid #424242;
+    }
+  
+    a {
+      width: 100%;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 5px;
+    }
+  }
+}
+
+
+#fname {
+  width: 48%;
+}
+
+#lname {
+  width: 48%;
+}
+
+#email {
+  width: 100%;
+}
+
+#phone {
+  width: 48%;
+}
+#zipcode {
+  width: 48%;
+}
+#msg {
+  width: 100%;
+  height: 100px;
+}
+
+.fit-form-img {
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+
+  img {
+    width: 100%;
+    height: 600px;
+    filter: grayscale(50);
+  }
+}
+
+// About us
+
+.about {
+  width: 90%;
+  max-width: 1280px;
+  display: flex;
+  margin: 80px auto;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.about-image {
+  width: 50%;
+  max-width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .img-outline {
+    height: 90%;
+    width: 300px;
+    border-radius: 190px 190px 0px 0px;
+    border: 10px solid var.$primary;
+    margin-right: -40%;
+    margin-top: -10%;
+  }
+
+  img {
+    height: 90%;
+    width: 300px;
+    border-radius: 190px 190px 0px 0px;
+  }
+}
+
+// Newsletter
+
+.newsletter {
+  width: 90%;
+  max-width: 1280px;
+  margin: 60px auto;
+  text-align: center;
+  background: #222222;
+  border-radius: 25px;
+  padding: 40px;
+
+  form {
+    border: 1px solid var.$primary;
+    border-radius: 10px;
+    display: flex;
+    padding: 5px;
+    width: 70%;
+    margin: auto;
+  }
+  input {
+    width: 75%;
+    margin: 0;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background: none;
+  }
+  a {
+    width: 25%;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+footer {
+  width: 90%;
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+}
+
+.footer-info {
+  width: 25%;
+  max-width: 100%;
+}
+
+.footer-menu {
+  width: 70%;
+  max-width: 100%;
+  margin-left: 40px;
+  display: flex;
+  justify-content: space-evenly;
+
+  ul {
+    margin: 0px 20px;
+  }
+
+  a {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    display: flex;
+    width: max-content;
+  }
+
+  img {
+    width: 15px;
+    filter: invert(1);
+  }
+}
+
+.socials {
+  display: flex;
+  width: 100%;
+}
+
+// Copy
+
+.copy {
+  width: 90%;
+  max-width: 1280px;
+  margin: 40px auto;
+  text-align: center;
+  border-top: #424242 solid 1px;
+}
+
+// Tablet Mode
+
+@media only screen and (max-width: 1024px) {
+  .hamMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .line {
+    height: 5px;
+    width: 30px;
+    border-radius: 2px;
+    margin: 2px 10px;
+    background: var.$gradient1;
+  }
+
+  .nav {
+    position: fixed;
+    height: 100vh;
+    width: 60%;
+    background: #222222;
+    top: 0;
+    right: -80%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 999;
+    transition: right ease 0.5s;
+
+    ul {
+      height: 50%;
+      flex-direction: column;
+      text-align: right;
+      justify-content: space-around;
+    }
+
+    a {
+      font-size: 24px;
+    }
+  }
+  .closeNav {
+    display: inline;
+  }
+  
+  // Program Cards
+  
+  .program-cards {
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 75%;
+  }
+  
+  .card {
+    margin: 20px;
+  }
+  
+  .form {
+    width: 100%;
+  }
+  
+  .fit-form-img {
+    display: none;
+  }
+}
+
+
+// Mobile
+
+@media only screen and (max-width: 850px) {
+  .goals {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-outline {
+    display: none;
+  }
+
+  .workout {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .performance {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .performance-info {
+    width: 100%;
+  }
+
+  .program-cards {
+    width: 100%;
+  }
+
+  #fname, #lname, #phone, #zipcode{
+    width: 100%;
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .about-image {
+    .img-outline {
+      height: 250px;
+    }
+  }
+
+  .newsletter {
+
+    form {
+      flex-direction: column;
+      width: 100%;
+      input {
+        width: 100%;
+        margin-bottom: 5px;
+      }
+      a {
+        width: 100%;
+      }
+    }
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .footer-info {
+    width: 100%;
+  }
+
+  .footer-menu {
+    width: 100%;
+    flex-direction: column;
+    margin: auto;
+
+    ul {
+      margin: 0;
+    }
+  }
+}
