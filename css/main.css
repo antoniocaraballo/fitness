@@ -706,6 +706,14 @@ footer {
   }
 }
 @media only screen and (max-width: 850px) {
+  .title {
+    font-size: 65px;
+  }
+
+  .lp-left p {
+    font-size: 16px;
+  }
+
   .goals {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -749,7 +757,10 @@ footer {
     width: 100%;
   }
 
-  #fname, #lname, #phone, #zipcode {
+  #fname,
+#lname,
+#phone,
+#zipcode {
     width: 100%;
   }
 

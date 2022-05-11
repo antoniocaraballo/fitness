@@ -8,7 +8,7 @@
   font-family: var.$font;
   color: #ffffff;
   @include mix.smallText;
-    // outline: 1px solid red;
+  // outline: 1px solid red;
 }
 
 body {
@@ -374,7 +374,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  
+
     input {
       padding: 10px;
       border-radius: 10px;
@@ -382,7 +382,7 @@ header {
       background: none;
       border: 1px solid #424242;
     }
-  
+
     a {
       width: 100%;
       text-decoration: none;
@@ -392,7 +392,6 @@ header {
     }
   }
 }
-
 
 #fname {
   width: 48%;
@@ -594,33 +593,42 @@ footer {
   .closeNav {
     display: inline;
   }
-  
+
   // Program Cards
-  
+
   .program-cards {
     margin: auto;
     flex-wrap: wrap;
     justify-content: center;
     width: 75%;
   }
-  
+
   .card {
     margin: 20px;
   }
-  
+
   .form {
     width: 100%;
   }
-  
+
   .fit-form-img {
     display: none;
   }
 }
 
-
 // Mobile
 
 @media only screen and (max-width: 850px) {
+  .title {
+    font-size: 65px;
+  }
+
+  .lp-left {
+    p {
+      font-size: 16px;
+    }
+  }
+
   .goals {
     flex-direction: column;
     align-items: center;
@@ -649,7 +657,10 @@ footer {
     width: 100%;
   }
 
-  #fname, #lname, #phone, #zipcode{
+  #fname,
+  #lname,
+  #phone,
+  #zipcode {
     width: 100%;
   }
 
@@ -658,7 +669,6 @@ footer {
     align-items: center;
   }
 
-
   .about-image {
     .img-outline {
       height: 250px;
@@ -666,7 +676,6 @@ footer {
   }
 
   .newsletter {
-
     form {
       flex-direction: column;
       width: 100%;
