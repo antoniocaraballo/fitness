@@ -722,6 +722,10 @@ footer {
     font-size: 16px;
   }
 
+  .lp-right {
+    display: none;
+  }
+
   .goals {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
