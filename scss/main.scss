@@ -554,6 +554,9 @@ footer {
 // Tablet Mode
 
 @media only screen and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
   .hamMenu {
     display: flex;
     flex-direction: column;
@@ -619,6 +622,10 @@ footer {
 // Mobile
 
 @media only screen and (max-width: 850px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .title {
     font-size: 65px;
   }

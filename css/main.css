@@ -627,6 +627,10 @@ footer {
 }
 
 @media only screen and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .hamMenu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -706,6 +710,10 @@ footer {
   }
 }
 @media only screen and (max-width: 850px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .title {
     font-size: 65px;
   }
